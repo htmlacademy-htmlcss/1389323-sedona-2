@@ -2,6 +2,7 @@
 
 * Студент: [Наталия Попова](https://up.htmlacademy.ru/htmlcss-individual/2/user/1389323).
 * Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
+* Сайт:[Мой проект Седона](https://hellonata.github.io/1389323-sedona-2/).
 
 ---
 
