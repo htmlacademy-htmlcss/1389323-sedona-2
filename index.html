@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-link-logo">
           <img class="logo-image" src="#" alt="Логотип Седона">
@@ -20,7 +20,7 @@
             <a class="navigation-link" href="#">О седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-users-list">
@@ -31,7 +31,7 @@
           </li>
           <li class="navigation-users-item">
             <a class="navigation-link">
-              <span class="visually-hidden">Избранное</span>
+              <span class="visually-hidden">Количество в избранном:</span>
               <span class="fav-number">12</span>
             </a>
           </li>
@@ -43,12 +43,12 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
-      <section class="greeting">
+    <main class="main-index" data-test="main">
+      <section class="greeting" data-test="hero">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <img class="greeting-image" src="#" alt="Welcome to the gorgeous Sedona">
+        <img class="greeting-image" src="#" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Достоинства</h2>
         <p class="advantages-caption uppercase">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -96,7 +96,7 @@
           </li>
         </ul>
       </section>
-      <section class="selection">
+      <section class="selection" data-test="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p class="selection-caption uppercase">Заинтересовались?</p>
         <p class="selection-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
@@ -104,8 +104,8 @@
         <a class="button selection-link" href="#">Поиск гостиницы в Седоне</a>
       </section>
     </main>
-    <footer class="page-footer">
-      <section class="subscribe">
+    <footer class="page-footer" data-test="footer">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title uppercase">Подпишитесь на рассылку</h2>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
