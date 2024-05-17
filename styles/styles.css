@@ -20,7 +20,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  color: #333333;
+  color: #000000;
   background-color: #FFFFFF;
 }
 
@@ -28,13 +28,11 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
 }
 
 .navigation-link {
   color: inherit;
   text-decoration: none;
-  text-align: center;
 }
 
 .navigation-link-current {
@@ -52,13 +50,21 @@ body {
   text-transform: uppercase;
 }
 
+.fav-number {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color:#7DB54F;
+}
+
 .navigation-users-list .button {
   color: #FFFFFF;
   background-color: #756157;
 }
 
 .greeting {
-  color: #333333;
+  color: #000000;
   background-color: #F2F2F2;
   background-image: url("../images/decorate-index-background.svg"),
     url("../images/index-background.jpg");
@@ -68,34 +74,33 @@ body {
     100% auto;
   background-position: bottom,
     top;
-  text-align: center;
 }
 
 .advantages-caption {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  text-align: center;
-  color: #000000;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages-text {
   text-align: center;
+  color: #333333;
 }
 
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  color: #000000;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages-item .description {
   font-size: 18px;
   line-height: 21px;
+  color:#333333;
   text-align: center;
 }
 
@@ -105,7 +110,7 @@ body {
 }
 
 .advantages-item:nth-child(3) {
-  background: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-accent {
@@ -113,33 +118,37 @@ body {
   background-color: #82B3D3;
 }
 
-.advantages-item-accent .advantages-title {
+.advantages-item-accent .description {
   color: #FFFFFF;
-}
-
-.service {
-  text-align: center;
 }
 
 .service-caption {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: #000000;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.service-text {
+  text-align: center;
+  color:#333333;
 }
 
 .service-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  color: #000000;
   text-transform: uppercase;
+  text-align: center;
+  color: #000000;
 }
 
 .service-item .description {
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
+  color: #333333;
 }
 
 .service-item:nth-child(1) {
@@ -150,31 +159,31 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.selection {
-  text-align: center;
-}
-
 .selection-caption {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: #000000;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.selection-text {
+  text-align: center;
+  color:#333333;
 }
 
 .selection-link {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
   color: #FFFFFF;
   background-color: #756157;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .index-subscribe {
-  text-align: center;
   color: #FFFFFF;
   background-color: #756157;
   background-image: url("../images/background-inner.jpg");
@@ -187,6 +196,10 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.subscribe-text {
+  text-align: center;
 }
 
 .subscribe-form input[type="email"] {
@@ -202,33 +215,29 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
-  text-transform: uppercase;
   background-color: #82B3D3;
 }
 
 .socials-link {
   color: #000000;
   text-decoration: none;
-  text-align: center;
 }
 
 .tel {
   font-size: 40px;
   line-height: 40px;
-}
-
-.inner-subscribe {
   text-align: center;
 }
 
 .wrapper {
   color: #FFFFFF;
-  background-color: #F2F2F2;
+  background-color: #756157;
   background-image: url("../images/background-inner.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .inner-header-title {
@@ -293,7 +302,6 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
 }
 
 .catalog-select {
@@ -313,12 +321,12 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  color: #000000;
 }
 
 .hotel-parametr {
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
 }
 
 .hotel-price {
@@ -352,6 +360,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  color: #333333;
   background-color: #F2F2F2;
 }
 
@@ -372,5 +381,8 @@ body {
 
 .more {
   text-align: center;
-  color: #000000;
+}
+
+.inner-subscribe .subscribe-text {
+  color:#333333;
 }
