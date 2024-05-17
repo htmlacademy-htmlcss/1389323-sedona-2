@@ -373,6 +373,10 @@ body {
   background-color: #82B3D3;
 }
 
+.hotels-item-favourites .hotels-button {
+  background-color: #7DB54F;
+}
+
 .rating-number {
   font-size: 16px;
   line-height: 20px;
