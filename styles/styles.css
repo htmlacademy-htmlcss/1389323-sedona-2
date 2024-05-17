@@ -21,9 +21,12 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 
+.page-header {
+  background-color: #FFFFFF;
+}
 .navigation {
   font-size: 20px;
   line-height: 24px;
@@ -63,17 +66,21 @@ body {
   background-color: #756157;
 }
 
+.main-index {
+  background-color: #FFFFFF;
+}
+
 .greeting {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #756157;
   background-image: url("../images/decorate-index-background.svg"),
     url("../images/index-background.jpg");
   background-repeat: no-repeat,
     no-repeat;
   background-size: 100% auto,
-    100% auto;
-  background-position: bottom,
-    top;
+    cover;
+  background-position: left bottom,
+    left top;
 }
 
 .advantages-caption {
@@ -104,16 +111,15 @@ body {
   text-align: center;
 }
 
-.advantages-item:nth-child(2),
-.advantages-item:nth-child(4) {
+.advantages-item:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:nth-child(3) {
+.advantages-item:nth-child(2n-1) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item-accent {
+.advantages-list .advantages-item-accent {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
@@ -151,11 +157,7 @@ body {
   color: #333333;
 }
 
-.service-item:nth-child(1) {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.service-item:nth-child(3) {
+.service-item:nth-child(2n-1) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -188,7 +190,11 @@ body {
   background-color: #756157;
   background-image: url("../images/background-inner.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+}
+
+.index-page-footer {
+  background-color: #FFFFFF;
 }
 
 .subscribe-title {
@@ -206,6 +212,7 @@ body {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
+  font-style: normal;
   color: #000000;
   background-color: #F2F2F2;
 }
@@ -215,6 +222,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
@@ -230,6 +238,10 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
+}
+
+.main-inner {
+  background-color: #FFFFFF;
 }
 
 .wrapper {
@@ -267,10 +279,12 @@ body {
 .control-range {
   font-size: 18px;
   line-height: 24px;
+  text-transform: lowercase;
 }
 
 .control-range input[type="number"] {
   font-family: inherit;
+  font-style: normal;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -284,6 +298,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
@@ -308,6 +323,7 @@ body {
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
   color: #333333;
   background-color: inherit;
 }
@@ -349,6 +365,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
@@ -385,4 +402,8 @@ body {
 
 .inner-subscribe .subscribe-text {
   color:#333333;
+}
+
+.inner-page-footer {
+  background-color: #FFFFFF;
 }
