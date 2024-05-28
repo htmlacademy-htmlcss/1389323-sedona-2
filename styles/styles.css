@@ -262,6 +262,10 @@ body {
 .advantages-container {
   padding: 104px 85px 101px;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   flex-grow: 1;
 }
@@ -376,7 +380,6 @@ body {
 }
 
 .index-subscribe {
-  margin-bottom: 40px;
   padding: 96px 96px 104px;
   min-height: 214px;
   color: #ffffff;
@@ -447,8 +450,7 @@ body {
 }
 
 .socials-container {
-  margin: 0 auto 30px;
-  width: 1060px;
+  padding: 40px 70px 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -703,7 +705,7 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 20px;
 }
 
@@ -834,6 +836,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 8px;
   margin-left: auto;
   margin-right: auto;
@@ -870,7 +873,6 @@ body {
 }
 
 .inner-subscribe {
-  margin-bottom: 40px;
   padding: 96px 96px 104px;
   min-height: 214px;
 }
