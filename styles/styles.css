@@ -21,7 +21,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
@@ -232,7 +232,7 @@ body {
 }
 
 .advantages-item:nth-child(2n) {
-  padding: 114px 85px 112px;
+  padding: 114px 84px 112px;
   width: 400px;
   box-sizing: border-box;
   flex-grow: 1;
@@ -240,7 +240,7 @@ body {
 }
 
 .advantages-item:nth-child(2n-1) {
-  padding: 114px 85px 112px;
+  padding: 114px 84px 112px;
   width: 400px;
   box-sizing: border-box;
   flex-grow: 1;
@@ -255,16 +255,9 @@ body {
   background-color: #82b3d3;
 }
 
-.advantages-list .advantages-item-accent:last-child {
-  flex-direction: row-reverse;
-}
-
 .advantages-container {
   padding: 104px 85px 101px;
   width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   box-sizing: border-box;
   flex-grow: 1;
@@ -276,7 +269,7 @@ body {
 
 .advantages-image {
   display: block;
-  vertical-align: middle;
+  margin: auto;
 }
 
 .service-caption {
@@ -337,17 +330,14 @@ body {
 
 .selection {
   padding: 96px;
-}
-
-.selection-container {
-  width: 630px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .selection-caption {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  width: 630px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -356,8 +346,8 @@ body {
 }
 
 .selection-text {
-  margin-top: 0;
-  margin-bottom: 54px;
+  margin: 0 auto 54px;
+  width: 630px;
   text-align: center;
   color: #333333;
 }
@@ -365,6 +355,7 @@ body {
 .selection-link {
   display: block;
   width: 276px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   padding: 8px 50px;
@@ -382,17 +373,14 @@ body {
 .index-subscribe {
   padding: 96px 96px 104px;
   min-height: 214px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #ffffff;
   background-color: #756157;
   background-image: url("../images/background-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.subscribe-container {
-  width: 690px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .index-page-footer {
@@ -401,7 +389,7 @@ body {
 
 .subscribe-title {
   margin: 0 auto 20px;
-  width: 404px;
+  width: 420px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -415,11 +403,18 @@ body {
   text-align: center;
 }
 
+.subscribe-form {
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 684px;
+}
+
 .subscribe-form input[type="email"] {
-  position: relative;
-  left: 2px;
-  margin-right: -5px;
-  padding: 14px 22px;
+  padding: 14px 20px;
   width: 412px;
   font-family: inherit;
   font-size: 18px;
@@ -432,8 +427,6 @@ body {
 }
 
 .subscribe-button {
-  position: relative;
-  top: 1px;
   padding: 8px 50px;
   font-family: inherit;
   font-size: 20px;
@@ -493,9 +486,9 @@ body {
 .main-inner {
   background-color: #ffffff;
 }
- /*для wrappera поставть нижний отступ 70*/
+
 .wrapper {
-  padding: 35px 70px 63px;
+  padding: 35px 70px 70px;
   min-height: 303px;
   color: #ffffff;
   background-color: #756157;
@@ -506,7 +499,7 @@ body {
 
 .inner-header-title {
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -518,6 +511,8 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .inner-header {
@@ -528,8 +523,6 @@ body {
   min-width: 13px;
   min-height: 15px;
   color: #ffffff;
-  font-size: 16px;
-  line-height: 21px;
   text-decoration: none;
 }
 
@@ -568,6 +561,8 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .filter-item:not(:last-child) {
@@ -579,12 +574,7 @@ body {
   margin: 0 0 32px 0;
   font-size: 20px;
   line-height: 24px;
-  font-weight: 700px;
-}
-
-.control {
-  font-size: 18px;
-  line-height: 23px;
+  font-weight: 700;
 }
 
 .control-range {
@@ -638,7 +628,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 38px;
-  outline:1px solid rebeccapurple;
+  outline: 1px solid rebeccapurple;
 }
 
 .catalog-title {
@@ -843,8 +833,9 @@ body {
 }
 
 .pagination-link {
+  padding: 5px 20px;
   min-width: 60px;
-  min-height: 60px;
+  height: 60px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -875,6 +866,9 @@ body {
 .inner-subscribe {
   padding: 96px 96px 104px;
   min-height: 214px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .inner-subscribe .subscribe-text {
