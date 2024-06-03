@@ -716,7 +716,7 @@ body {
 .hotels-item {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 212px auto auto auto auto;
+  grid-template-rows: 212px 1fr auto auto auto;
   column-gap: 20px;
   row-gap: 16px;
   align-items: center;
