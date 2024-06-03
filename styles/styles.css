@@ -176,6 +176,7 @@ body {
 .greeting-image {
   display: block;
   width: 458px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -270,6 +271,7 @@ body {
 .advantages-image {
   display: block;
   margin: auto;
+  max-width: 100%;
 }
 
 .service-caption {
@@ -405,12 +407,13 @@ body {
 
 .subscribe-form {
   display: flex;
+  justify-content: center;
   align-self: flex-start;
   flex-wrap: wrap;
   row-gap: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 684px;
+  width: 800px;
 }
 
 .subscribe-form input[type="email"] {
@@ -688,20 +691,32 @@ body {
   border-color: #000000;
 }
 
-.hotels-list {
+/* view-table  */
+.hotels-list.view-table {
   margin: 0;
   padding: 0;
   margin-bottom: 80px;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
+}
+
+/* view-data-list  */
+.hotels-list.view-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 340px;
   gap: 20px;
 }
 
 .hotels-item {
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: 212px auto auto auto auto;
   column-gap: 20px;
   row-gap: 16px;
   align-items: center;
@@ -713,20 +728,22 @@ body {
 
 .image-link {
   display: block;
-  margin-top: 0;
-  grid-column: 1/3;
-  grid-row: 1;
+  grid-column: 1/-1;
 }
 
 .hotel-image {
   display: block;
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hotel-title {
   margin-top: 0;
   margin-bottom: 0;
-  grid-column: 1/3;
-  grid-row-start: 2;
+  grid-column: 1/-1;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -735,8 +752,6 @@ body {
 .hotel-price {
   margin-top: 0;
   margin-bottom: 0;
-  grid-column: 2;
-  grid-row: 3;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -746,8 +761,6 @@ body {
 .hotel-type {
   margin-top: 0;
   margin-bottom: 0;
-  grid-column: 1;
-  grid-row: 3;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -757,8 +770,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   display: block;
-  grid-column: 1;
-  grid-row: 4;
   padding-top: 8px;
   padding-bottom: 8px;
   font-size: 16px;
@@ -773,8 +784,6 @@ body {
 }
 
 .hotels-button {
-  grid-column: 2;
-  grid-row: 4;
   padding-top: 8px;
   padding-bottom: 8px;
   font-family: inherit;
@@ -795,22 +804,18 @@ body {
 }
 
 .hotel-raiting {
-  height: 37px;
+  height:33x;
   margin: 0;
-  grid-column: 1;
-  grid-row: 5;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
 
 .rating-number {
-  margin-top: 0;
-  margin-bottom: 0;
+  align-self: start;
+  margin: 0;
   padding-top: 8px;
   padding-bottom: 8px;
-  grid-column: 2;
-  grid-row: 5;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
