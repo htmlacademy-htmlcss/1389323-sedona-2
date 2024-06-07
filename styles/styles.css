@@ -391,26 +391,9 @@ body {
 }
 
 .service-item {
-  padding: 183px 85px 81px;
+  padding: 81px 85px 81px;
   box-sizing: border-box;
   width: 400px;
-  background-repeat: no-repeat;
-
-}
-
-.service-item:nth-child(1) {
-  background-image: url("../images/service/service-housing.svg");
-  background-position: center 81px;
-}
-
-.service-item:nth-child(2) {
-  background-image: url("../images/service/service-food.svg");
-  background-position: center 82px;
-}
-
-.service-item:nth-child(3) {
-  background-image: url("../images/service/service-souvenir.svg");
-  background-position: center 79px;
 }
 
 .service-title {
@@ -422,6 +405,30 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+}
+
+.service-title::before{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 75px;
+  height: 72px;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.service-housing::before {
+  background-image: url("../images/service/service-housing.svg");
+}
+
+.service-food::before {
+  background-image: url("../images/service/service-food.svg");
+}
+
+.service-souvenirs::before {
+  background-image: url("../images/service/service-souvenir.svg");
 }
 
 .service-item .description {
@@ -958,6 +965,7 @@ a[href^="tel:"]:active {
   color: #ffffff;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .filter-form-button[type="submit"] {
@@ -1331,7 +1339,7 @@ a[href^="tel:"]:active {
 }
 
 .pagination-link {
-  padding: 5px 20px;
+  padding: 5px 18px;
   min-width: 60px;
   height: 60px;
   box-sizing: border-box;
