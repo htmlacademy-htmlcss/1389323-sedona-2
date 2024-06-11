@@ -27,7 +27,7 @@
           </ul>
           <ul class="users-list">
             <li class="users-item">
-              <a class="navigation-link">
+              <a class="navigation-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                   <path
@@ -37,7 +37,7 @@
               </a>
             </li>
             <li class="users-item">
-              <a class="navigation-link">
+              <a class="navigation-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
                   <path
@@ -48,7 +48,7 @@
               </a>
             </li>
             <li class="users-item">
-              <a class="navigation-link button">
+              <a class="navigation-link button" href="#">
                 Хочу сюда!
               </a>
             </li>
@@ -126,17 +126,23 @@
               </fieldset>
               <fieldset class="filter-group">
                 <legend class="filter-title">Стоимость, ₽:</legend>
-                <label class="control-range">
-                  <span class="visually-hidden">От</span>
-                  <input class="control-input-text" type="number" min="0" max="9000" name="range-min" value="0">
-                </label>
-                <label class="control-range">
-                  <span class="visually-hidden">До</span>
-                  <input class="control-input-text" type="number" min="0" max="9000" name="range-max" value="9000">
-                </label>
+                <div class="input-range">
+                  <label class="control-range">
+                    <span class="visually-hidden">От</span>
+                    <input class="control-input-text" type="number" min="0" max="9000" name="range-min" value="0">
+                  </label>
+                  <label class="control-range">
+                    <span class="visually-hidden">До</span>
+                    <input class="control-input-text" type="number" min="0" max="9000" name="range-max" value="9000">
+                  </label>
+                </div>
                 <div class="range">
-                  <button class="button-range" type="button"></button>
-                  <button class="button-range" type="button"></button>
+                  <button class="button-range" type="button">
+                    <span class="visually-hidden">Установить минимальную границу цены</span>
+                  </button>
+                  <button class="button-range" type="button">
+                    <span class="visually-hidden">Установить максимальную границу цены</span>
+                  </button>
                 </div>
               </fieldset>
               <div class="button-container filter-group">
@@ -183,8 +189,8 @@
               <p class="hotel-price">От 4000 ₽</p>
               <a class="button hotel-link" href="#">подробнее</a>
               <button class="button hotels-button" type="submit">в избранное</button>
-              <p class="hotel-rating">
-                <span class="visually-hidden four-stars">Отель 4 звезды</span>
+              <p class="hotel-rating four-stars">
+                <span class="visually-hidden">Отель 4 звезды</span>
               </p>
               <p class="rating-number">Рейтинг: 8,5</p>
             </li>
@@ -197,9 +203,9 @@
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 5000 ₽</p>
               <a class="button hotel-link" href="#">подробнее</a>
-              <button class="button hotels-button" type="submit">в избранное</button>
-              <p class="hotel-rating">
-                <span class="visually-hidden four-stars">Отель 4 звезды</span>
+              <button class="button hotels-button" type="submit">в избранном</button>
+              <p class="hotel-rating four-stars">
+                <span class="visually-hidden">Отель 4 звезды</span>
               </p>
               <p class="rating-number">Рейтинг: 9,2</p>
             </li>
@@ -213,8 +219,8 @@
               <p class="hotel-price">От 2500 ₽</p>
               <a class="button hotel-link" href="#">подробнее</a>
               <button class="button hotels-button" type="submit">в избранное</button>
-              <p class="hotel-rating">
-                <span class="visually-hidden three-stars">Отель 3 звезды</span>
+              <p class="hotel-rating three-stars">
+                <span class="visually-hidden">Отель 3 звезды</span>
               </p>
               <p class="rating-number">Рейтинг: 6,9</p>
             </li>
@@ -228,8 +234,8 @@
               <p class="hotel-price">От 1500 ₽</p>
               <a class="button hotel-link" href="#">подробнее</a>
               <button class="button hotels-button" type="submit">в избранное</button>
-              <p class="hotel-rating">
-                <span class="visually-hidden two-stars">Отель 2 звезды</span>
+              <p class="hotel-rating  two-stars">
+                <span class="visually-hidden">Отель 2 звезды</span>
               </p>
               <p class="rating-number">Рейтинг: 5,0</p>
             </li>
