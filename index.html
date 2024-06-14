@@ -196,7 +196,7 @@
               Дата заезда:
             </label>
             <p class="modal-text">
-              <input class="modal-input date-arrive" type="date" name="arrive-date" id="arrive" value="27 апреля 2020"
+              <input class="modal-input date-arrive" type="text" name="arrive-date" id="arrive" value="27 апреля 2020"
                 placeholder="Укажите дату" required>
               <span class="modal-comment modal-comment-error">Мы не можем отправить вас в прошлое.</span>
             </p>
@@ -204,11 +204,11 @@
               Дата выезда:
             </label>
             <p class="modal-text">
-              <input class="modal-input  date-departure" type="date" name="departure-date" id="departure"
-                placeholder="Укажите дату" value="1 сентября 2021" required>
+              <input class="modal-input  date-departure" type="text" name="departure-date" id="departure"
+                placeholder="Укажите дату" value="1 сентября 2023" required>
               <span class="modal-comment">На эти даты есть свободные номера. Пока есть.</span>
             </p>
-            <label class="modal-control " for="count-grownup">Взрослые:</label>
+            <label class="modal-control modal-control-left" for="count-grownup">Взрослые:</label>
             <div class="modal-grid-wrapper">
               <div class="modal-input-wrapper">
                 <button class="modal-input-count lessen-button" type="button">
@@ -219,7 +219,7 @@
                   <span class="visually-hidden">Уменьшить количество</span>
                 </button>
                 <input class="modal-input modal-input-count count-grownup" type="number" name="grownup"
-                  id="count-grownup" value="2">
+                  id="count-grownup" value="2" min="1" required>
                 <button class="modal-input-count add-button" type="button">
                   <svg class="modal-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                     width="14" height="14" fill="none" viewBox="0 0 14 14">
@@ -233,14 +233,16 @@
               <label class="modal-control modal-control-right" for="count-child">Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-count-child">
-                  <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-                    width="2" height="12" fill="none" viewBox="0 0 2 12">
-                    <path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd" />
+                  <svg class="tooltip-icon" aria-hidden="true" focusable="false" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none" viewBox="0 0 2 12">
+                    <path fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd" />
                   </svg>
                 </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-count-child">Укажите количество детей, которые
-                  будут с вами, возраст которых от 6 до 18
-                  лет. Дети до 6 лет размещаются бесплатно.</span>
+                <span class="tooltip-wrapper">
+                  <span class="tooltip-text" role="tooltip" id="tooltip-count-child">Укажите количество детей, которые
+                    будут с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
               </span>
             </span>
             <div class="modal-grid-wrapper">
@@ -253,7 +255,7 @@
                   <span class="visually-hidden">Уменьшить количество</span>
                 </button>
                 <input class="modal-input modal-input-count count-child" type="number" name="children" id="count-child"
-                  value="2">
+                  value="2" min="0" required>
                 <button class="modal-input-count add-button" type="button">
                   <svg class="modal-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                     width="14" height="14" fill="none" viewBox="0 0 14 14">
