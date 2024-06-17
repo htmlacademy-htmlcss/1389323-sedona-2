@@ -975,17 +975,14 @@ body {
 .range {
   position: relative;
   width: 287px;
-  border-bottom: 4px solid rgb(255, 255, 255, 0.3);
+  background-color: rgb(255, 255, 255, 0.3);
+  height: 4px;
 }
 
-/*для управления стоимостью изменять left и width */
-.range::before {
+.range-bar {
   position: absolute;
-  top: 0;
-  left: 10px;
-  width: 217px;
-  border-bottom: 4px solid #ffffff;
-  content: "";
+  background-color: #ffffff;
+  height: 4px;
 }
 
 .button-range {
@@ -1004,7 +1001,7 @@ body {
 }
 
 .range-max {
-  left: 207px;
+  left: 206px;
 }
 
 .button-range:hover {
@@ -1860,12 +1857,9 @@ body {
   top: 0;
   left: 50%;
   display: block;
-  background-image: url("../images/tooltip-decorate.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 19px;
-  height: 9px;
-  transform: translate(-10px, -8px);
+  width: 20px;
+  height: 20px;
+  background-color: #333333;
+  transform: translate(-10px, -5px) rotate(45deg);
   content: "";
 }
