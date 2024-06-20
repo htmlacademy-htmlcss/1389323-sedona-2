@@ -152,7 +152,7 @@ img {
   -webkit-text-decoration-color: #756257;
   text-decoration-color: #756257;
   text-decoration-thickness: 2px;
-  text-underline-offset: 19px;
+  text-underline-offset: 18px;
   text-underline-position: under;
 }
 
@@ -247,7 +247,6 @@ img {
 }
 
 .greeting {
-  margin-bottom: 70px;
   padding-top: 51px;
   padding-bottom: 82px;
   min-height: 352px;
@@ -272,7 +271,7 @@ img {
 }
 
 .advantages {
-  margin-bottom: 65px;
+  padding-top: 70px;
 }
 
 .advantages-wrapper {
@@ -291,6 +290,7 @@ img {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  word-spacing: -1px;
 }
 
 .advantages-text {
@@ -304,36 +304,6 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-}
-
-.advantages-title {
-  position: relative;
-  margin: 0 auto 61px;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  word-wrap: break-word;
-}
-
-.advantages-title-special {
-  margin-left: -6px;
-}
-
-.advantages-title::after {
-  position: absolute;
-  bottom: -30px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 60px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  content: "";
-}
-
-.advantages-item-accent .advantages-title::after {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .advantages-item .description {
@@ -376,6 +346,39 @@ img {
   flex-grow: 1;
 }
 
+.advantages-title {
+  position: relative;
+  margin: 0 auto 62px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.advantages-title-accent::first-letter {
+  margin-left: -6px;
+}
+
+.advantages-title::after {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+  transform: translateY(50%);
+}
+
+.advantages-item-accent .advantages-title::after {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(100%);
+}
+
 .advantages-item-accent .description {
   color: #ffffff;
 }
@@ -386,6 +389,10 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+.service {
+  padding-top: 63px;
 }
 
 .service-wrapper {
@@ -490,7 +497,7 @@ img {
 }
 
 .selection-text {
-  margin: 0 auto 33px;
+  margin: 0 auto 34px;
   width: 630px;
   text-align: center;
   color: #333333;
@@ -530,7 +537,7 @@ img {
 }
 
 .index-subscribe {
-  padding: 97px 96px 104px;
+  padding: 96px 96px 104px;
   min-height: 214px;
   display: flex;
   flex-direction: column;
@@ -557,7 +564,7 @@ img {
 }
 
 .subscribe-text {
-  margin: 0 auto 54px;
+  margin: 0 auto 55px;
   width: 475px;
   padding-left: 2px;
   text-align: center;
@@ -637,9 +644,8 @@ img {
   background-color: #e5e5e5;
 }
 
-
 .socials-container {
-  padding: 39px 70px 28px;
+  padding: 39px 70px 27px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -724,7 +730,7 @@ img {
 }
 
 .site {
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 4px;
   color: #000000;
   text-decoration: none;
@@ -1142,14 +1148,14 @@ img {
 }
 
 .catalog {
-  padding: 49px 70px 60px;
+  padding: 50px 70px 60px;
 }
 
 .sorting-conatiner {
   width: 1060px;
   display: flex;
   align-items: flex-start;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .catalog-title {
@@ -1157,7 +1163,7 @@ img {
   margin-bottom: 0;
   width: 434px;
   margin-right: auto;
-  padding: 8px 0;
+  padding: 6px 0 6px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1172,7 +1178,7 @@ img {
 .catalog-select {
   width: 292px;
   margin-right: 70px;
-  padding: 14px 34px 12px 18px;
+  padding: 14px 38px 12px 20px;
   box-sizing: border-box;
   font-family: inherit;
   font-size: 18px;
@@ -1212,7 +1218,7 @@ img {
   flex-wrap: wrap;
   gap: 8px;
   margin: 0;
-  padding: 2px 0;
+  padding: 0;
   max-width: 170px;
   list-style: none;
 }
@@ -1265,7 +1271,7 @@ img {
 .hotels-list.table {
   margin: 0;
   padding: 0;
-  margin-bottom: 79px;
+  margin-bottom: 80px;
   list-style: none;
   display: grid;
   grid-template-columns: 340px 340px 340px;
@@ -1445,11 +1451,11 @@ img {
 }
 
 .three-stars {
-  width: 66px;
+  width: 67px;
 }
 
 .four-stars {
-  width: 88px;
+  width: 89px;
 }
 
 .five-stars {
@@ -1459,7 +1465,7 @@ img {
 .rating-number {
   align-self: start;
   margin: 0;
-  padding-top: 8px;
+  padding-top: 9px;
   padding-bottom: 8px;
   font-size: 16px;
   line-height: 20px;
@@ -1534,7 +1540,7 @@ img {
 }
 
 .inner-subscribe {
-  padding: 97px 96px 104px;
+  padding: 96px 96px 104px;
   min-height: 214px;
   display: flex;
   flex-direction: column;
