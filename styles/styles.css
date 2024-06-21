@@ -1148,7 +1148,7 @@ img {
   padding: 50px 70px 60px;
 }
 
-.sorting-conatiner {
+.sorting-container {
   width: 1060px;
   display: flex;
   align-items: flex-start;
@@ -1183,9 +1183,8 @@ img {
   font-weight: 400;
   color: #333333;
   background-color: inherit;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
-  border-color: #e5e5e5;
-  border-width: 2px;
   -webkit-appearance: none;
   appearance: none;
   background-image: url("../images/corner-down.svg");
