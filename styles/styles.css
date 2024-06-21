@@ -892,19 +892,6 @@ img {
   cursor: pointer;
 }
 
-.control:hover {
-  opacity: 0.6;
-}
-
-.control:focus {
-  opacity: 1;
-  outline: none;
-}
-
-.control:active {
-  opacity: 0.3;
-}
-
 .control-mark {
   position: absolute;
   top: 1px;
@@ -942,12 +929,22 @@ img {
   outline: 3px solid #83b3d3;
 }
 
-.control-input:disabled + .control-mark,
-.control-input:disabled:hover + .control-mark,
-.control-input:disabled:active + .control-mark,
+.control:hover .control-mark,
+.control:hover .control-label {
+  opacity: 0.6;
+}
+
+.control:active .control-mark,
+.control:active .control-label {
+  opacity: 0.3;
+}
+
 .control-input:disabled ~ .control-label,
-.control-input:disabled:hover ~ .control-label,
-.control-input:disabled:active ~ .label {
+.control-input:disabled + .control-mark,
+.control:hover .control-input:disabled ~ .control-label,
+.control:hover .control-input:disabled + .control-mark,
+.control:active .control-input:disabled ~ .control-label,
+.control:active .control-input:disabled + .control-mark {
   opacity: 0.3;
 }
 
@@ -1269,6 +1266,7 @@ img {
 
 /* view-table  */
 .hotels-list.table {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-bottom: 80px;
@@ -1279,7 +1277,9 @@ img {
 }
 
 /* view-data-list  */
+
 .hotels-list.list {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-bottom: 80px;
@@ -1287,6 +1287,17 @@ img {
   display: grid;
   grid-template-columns: 340px;
   gap: 20px;
+}
+
+.hotels-list::after {
+  position: absolute;
+  bottom: -41px;
+  left: 0;
+  display: block;
+  width: 1060px;
+  height: 1px;
+  background-color: #e6e6e6;
+  content: "";
 }
 
 .hotels-item {
